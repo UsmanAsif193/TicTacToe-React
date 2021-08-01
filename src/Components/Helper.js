@@ -1,4 +1,4 @@
-export function calculateWinner(squares) {
+export function CalculateWinner(squares) {
     const lines = [
         [0, 1, 2],
         [3, 4, 5],
