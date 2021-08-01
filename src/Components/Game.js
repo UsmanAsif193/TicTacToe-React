@@ -16,7 +16,7 @@ function Game() {
         const current = historyPoint[stepNumber];
         const squares = [...current];
 
-        if (winner || sqaures[i]) return;
+        if (winner || squares[i]) return;
 
         squares[i] = xO;
         setHistory([...historyPoint, squares]);
