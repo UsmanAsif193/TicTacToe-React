@@ -1,9 +1,12 @@
 import React from 'react'
+import Square from './Square'
 
-function Board() {
+function Board({ squares, onClick }) {
     return (
-        <div>
-            This is Board
+        <div className="board">
+            {squares.map((square, i) => (
+                <Square key={i} value={sqaure} onClick={() => onClick(i)} />
+            ))}
         </div>
     )
 }
