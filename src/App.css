@@ -29,6 +29,7 @@ h1 {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 1rem;
+
 }
 
 .squares {
@@ -68,4 +69,19 @@ li {
   cursor: pointer;
   padding: 0.5rem;
   margin: 0.5rem 1rem;
+}
+
+@media only screen and (max-width:720px) {
+  .board{
+    height: 300px;
+    width: 300px;
+  }
+
+  .squares{
+    font-size: 3rem;
+  }
+
+  h1{
+    font-size: 28px;
+  }
 }
